@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Belajar Mandarin</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Belajar Mandarin HSK 1</h1>
+    <h1>Belajar Mandarin 🇨🇳</h1>
+    <button id="toggle-dark">🌙/☀️</button>
   </header>
+
   <main>
-    <div class="flashcards" id="flashcards"></div>
+    <section class="kosakata">
+      <h2>📖 Kosakata HSK 1</h2>
+      <ul id="vocab-list">
+        <!-- Akan diisi lewat JavaScript -->
+      </ul>
+    </section>
+
+    <section class="kuis">
+      <h2>🧠 Mini Kuis</h2>
+      <div id="quiz-container"></div>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Belajar Mandarin by Kaizinnn</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

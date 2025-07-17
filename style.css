@@ -1,44 +1,71 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
+  background: white;
+  color: black;
+  transition: background 0.3s, color 0.3s;
 }
 
 header {
-  background-color: #e63946;
-  color: white;
-  padding: 20px;
-}
-
-.flashcards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #d32f2f;
+  color: white;
 }
 
-.card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 200px;
-  margin: 10px;
-  padding: 15px;
-  transition: transform 0.3s;
+button#toggle-dark {
+  background: white;
+  color: #d32f2f;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.card:hover {
-  transform: scale(1.05);
+main {
+  padding: 1rem;
 }
 
-.hanzi {
-  font-size: 40px;
-  color: #1d3557;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.pinyin, .arti {
-  margin-top: 10px;
-  font-size: 18px;
+.vocab-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.quiz-question {
+  margin: 1rem 0;
+}
+
+.quiz-options button {
+  margin: 0.25rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f5f5f5;
+  margin-top: 2rem;
+}
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .vocab-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
